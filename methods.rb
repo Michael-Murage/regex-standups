@@ -1,3 +1,4 @@
+# Method to replace +254 with 0
 def sub_254(arr)
     subbed = []
     arr.each do |num|
@@ -6,6 +7,7 @@ def sub_254(arr)
     subbed
 end
 
+# Method to remove heifens
 def heifen_remover(arr)
     subbed = []
     arr.each do |num|
@@ -16,6 +18,7 @@ end
 
 # numbers_parser = /^[\d]{4} ?[\d]{3} ?[\d]{3}$|^((\+254) ?7[\d]{2} ?[\d]{3} ?[\d]{3})$|^(07\d-[\d]{3}-[\d]{4})$/ 
 
+# Below are methods to return some regexes for validation in ./regex.rb
 def simple_parser
     /^07[\d]{2} ?[\d]{3} ?[\d]{3}$/
 end
