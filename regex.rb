@@ -1,6 +1,7 @@
 require "pry"
 require_relative './methods.rb'
 
+# Assuming an array of telephone numbers whose format we want to verify
 numbers = [
     "0712345678", 
     "0712 345 678", 
@@ -29,6 +30,7 @@ no_heifen = heifen_remover(standardized)   #takes the numbers array without +254
 
 # puts no_heifen.grep(simple_parser)
 
+# Assuming an array of telephone numbers whose origin we'd like to verify if its safaricom
 saf_lines = [
     "0701234567", 
     "0711123456", 
@@ -50,6 +52,8 @@ subbed_saf_lines = sub_254(saf_lines)
 # puts subbed_saf_lines.grep(lines_parser2)
 # # p saf_lines
 
+
+# Assuming an array of emails we'd like to verify whether they are Moringa's
 emails = [
     'michael.murage@student.moringaschool.com',
     'professorombiji@student.moringaschool.com', 
